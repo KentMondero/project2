@@ -1,4 +1,4 @@
-import streamlitas as st
+import streamlit as st
 
-st.write("# This is a project website")
-st.write("### ICS-01-401A")
+st.title("Hello Streamlit")
+st.write("If you can see this, deployment is working.")
