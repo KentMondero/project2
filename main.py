@@ -1,11 +1,9 @@
 import streamlit as st
 
-st.set_page_config(page_title="Button Calculator", layout="centered")
+st.set_page_config(page_title="Calculator", layout="centered")
 
-# Sidebar
 menu = st.sidebar.selectbox("Menu", ["Home", "About"])
 
-# Initialize display value
 if "expression" not in st.session_state:
     st.session_state.expression = ""
 
@@ -24,10 +22,8 @@ def calculate():
 if menu == "Home":
     st.title("Calculator with Buttons")
 
-    # Display
     st.text_input("Display", st.session_state.expression, disabled=True)
 
-    # Buttons layout
     col1, col2, col3, col4 = st.columns(4)
 
     with col1:
