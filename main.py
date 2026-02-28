@@ -2,8 +2,8 @@ import streamlit as st
 
 st.title("Simple Calculator")
 
-num1 = st.number_input("Enter first number", value=0)
-num2 = st.number_input("Enter second number", value=0)
+num1 = st.number_input("Enter first number")
+num2 = st.number_input("Enter second number")
 
 operation = st.selectbox("Choose operation", ["Add", "Subtract", "Multiply", "Divide"])
 
